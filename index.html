@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 대학 AI·SW 교육 지원사업 종합 가이드</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- GNB -->
+<nav class="gnb" id="gnb">
+  <div class="gnb-left">
+    <span class="gnb-logo">Grepp</span>
+    <div class="gnb-sep"></div>
+    <span class="gnb-title">교육개발파트 리서치</span>
+  </div>
+  <div class="gnb-right">
+    <span class="gnb-updated" id="gnbUpdated"></span>
+    <span class="gnb-badge">2026 현행 기준</span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">2026 정부 재정지원사업 종합</div>
+    <h1>대학 <span>AI · SW 교육</span> 지원사업<br>현황 가이드</h1>
+    <p class="hero-desc">
+      과기정통부·교육부·고용노동부가 운영하는 대학 대상 AI·SW·지역혁신 인재양성 사업을 한 곳에 정리했습니다.
+      각 사업을 클릭하면 공식 사이트·공고로 바로 이동합니다.
+    </p>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">24</div>
+        <div class="hero-stat-label">조사된 사업 수</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">8</div>
+        <div class="hero-stat-label">2026년 신규 사업</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">연 2.4조</div>
+        <div class="hero-stat-label">RISE 국고+지방비 합산</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">3개 부처</div>
+        <div class="hero-stat-label">과기부·교육부·고용부</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar" id="filterBar">
+  <span class="filter-label">필터</span>
+  <button class="filter-btn active" onclick="setFilter(this,'all')">전체</button>
+  <button class="filter-btn" onclick="setFilter(this,'msit')">과기정통부</button>
+  <button class="filter-btn" onclick="setFilter(this,'moe')">교육부</button>
+  <button class="filter-btn" onclick="setFilter(this,'moel')">고용노동부</button>
+  <button class="filter-btn" onclick="setFilter(this,'new')">2026 신규</button>
+  <button class="filter-btn" onclick="setFilter(this,'univ')">일반대학</button>
+  <button class="filter-btn" onclick="setFilter(this,'junior')">전문대학</button>
+  <button class="filter-btn" onclick="setFilter(this,'grad')">대학원</button>
+  <button class="filter-btn" onclick="setFilter(this,'region')">지역연계</button>
+</div>
+
+<!-- MAIN -->
+<div class="main-wrap">
+
+  <!-- 업데이트 주기 안내 배너 -->
+  <div class="update-banner fade-up">
+    <div class="update-banner-left">
+      <span class="update-icon">🔄</span>
+      <div>
+        <div class="update-title">이 페이지의 업데이트 주기 안내</div>
+        <div class="update-desc">각 사업 공고는 <strong>연 1회(매년 1~3월)</strong> 갱신됩니다. 선정 결과는 공고 후 <strong>2~4개월 내</strong> 발표되며, 사업별로 상이합니다. 현재 데이터 기준일은 <strong>2026년 6월</strong>이며, 다음 주요 업데이트 시점은 아래와 같습니다.</div>
+      </div>
+    </div>
+    <div class="update-schedule">
+      <div class="update-row"><span class="update-when">2026년 6월</span><span class="update-what">AI중심대학 3개교 추가 선정 · AI기본교육과정 최종 확정</span></div>
+      <div class="update-row"><span class="update-when">2026년 상반기 내</span><span class="update-what">AX대학원 · AI혁신대학원 선정 결과 발표</span></div>
+      <div class="update-row"><span class="update-when">2027년 1~3월</span><span class="update-what">대부분 사업 신규 공고 (차년도 신청 시작)</span></div>
+    </div>
+  </div>
+
+  <!-- CHART -->
+  <div class="chart-section fade-up" id="chartSection">
+    <div class="chart-title">사업별 지원 규모 — 연간 / 교당 기준</div>
+    <div id="barChart"></div>
+    <div class="dept-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:#2B7FFF"></div>과기정통부 (IITP)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#00C48C"></div>교육부</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#BE123C"></div>고용노동부</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7C3AED"></div>교육부 (지역연계)</div>
+    </div>
+  </div>
+
+  <!-- CARD LIST -->
+  <div class="section-header">
+    <span class="section-title">전체 사업 목록</span>
+    <span class="section-count" id="sectionCount">24개 사업</span>
+  </div>
+
+  <!-- 🏆 대학별 랭킹 -->
+  <div class="ranking-wrap fade-up" id="rankingSection">
+    <div class="ranking-header">
+      <span class="section-title">대학별 수주 현황</span>
+      <span class="ranking-note">※ 선정 완료·기 운영 중인 사업만 집계 / 사업별 연간 지원금 기준</span>
+    </div>
+    <div class="ranking-tabs">
+      <button class="rtab active" onclick="switchRank(this,'count')">📊 수주 사업 수</button>
+      <button class="rtab" onclick="switchRank(this,'budget')">💰 연간 예산 규모</button>
+    </div>
+    <div id="rankCount" class="rank-panel active"></div>
+    <div id="rankBudget" class="rank-panel"></div>
+    <div class="rank-expand-row">
+      <button class="rank-expand-btn" id="rankExpandBtn" onclick="toggleAllRanks()">
+        <span id="rankExpandLabel">전체 대학 보기</span>
+        <span class="rank-expand-icon" id="rankExpandIcon">▼</span>
+      </button>
+    </div>
+    <div id="rankAllWrap" style="display:none">
+      <div class="rank-all-divider"></div>
+      <div id="rankAllCount" class="rank-all-panel active"></div>
+      <div id="rankAllBudget" class="rank-all-panel"></div>
+    </div>
+    <p class="ranking-caveat">※ 글로컬대학30 연간 200억 기준 적용 / LINC 3.0 기술혁신선도형 연 55억 기준 / COSS는 컨소시엄 참여 가중 50억 추산 / RISE는 확인된 단위 기준만 반영. 예산은 추정치이며 실제와 다를 수 있음.</p>
+  </div>
+
+  <div class="cards-grid" id="cardsGrid"></div>
+  <div class="empty-state" id="emptyState" style="display:none">
+    <div class="empty-state-icon">🔍</div>
+    <p>해당 조건의 사업이 없습니다.</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <span class="footer-left">© 2026 Grepp 교육개발파트 · 데이터 기준: 2026년 6월</span>
+  <div class="footer-right">
+    <a class="footer-link" href="https://www.msit.go.kr" target="_blank">과기정통부</a>
+    <a class="footer-link" href="https://www.moe.go.kr" target="_blank">교육부</a>
+    <a class="footer-link" href="https://www.moel.go.kr" target="_blank">고용노동부</a>
+    <a class="footer-link" href="https://ezone.iitp.kr" target="_blank">IITP</a>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+const DATA_URL = 'programs.json';
+let PROGRAMS = [];
+let UNIV_DATA = [];
+let LAST_UPDATED = '';
+
+const BADGE_META = {
+  msit:   { cls: 'badge-msit',   label: '과기정통부' },
+  moe:    { cls: 'badge-moe',    label: '교육부' },
+  moel:   { cls: 'badge-moel',   label: '고용노동부' },
+  new:    { cls: 'badge-new',    label: '★ 2026 신규' },
+  grad:   { cls: 'badge-grad',   label: '대학원' },
+  univ:   { cls: 'badge-univ',   label: '일반대학' },
+  junior: { cls: 'badge-junior', label: '전문대학' },
+  region: { cls: 'badge-region', label: '지역연계' },
+};
+
+let currentFilter = 'all';
+
+function getBadgeHtml(badges) {
+  return badges.map(b => {
+    const m = BADGE_META[b];
+    return m ? `<span class="badge ${m.cls}">${m.label}</span>` : '';
+  }).join('');
+}
+
+function getStatusHtml(p) {
+  const cls = p.status === 'done' ? 'status-done' : p.status === 'ongoing' ? 'status-ongoing' : 'status-pending';
+  return `<span class="status-pill ${cls}"><span class="status-dot"></span>${p.statusLabel}</span>`;
+}
+
+function renderCards(filter) {
+  const grid = document.getElementById('cardsGrid');
+  const empty = document.getElementById('emptyState');
+  const count = document.getElementById('sectionCount');
+
+  const filtered = filter === 'all'
+    ? PROGRAMS
+    : PROGRAMS.filter(p => {
+        if (filter === 'moe') return p.dept === 'moe';
+        if (filter === 'msit') return p.dept === 'msit';
+        if (filter === 'moel') return p.dept === 'moel';
+        if (filter === 'new') return p.isNew;
+        if (filter === 'univ') return p.target === 'univ';
+        if (filter === 'junior') return p.target === 'junior';
+        if (filter === 'grad') return p.target === 'grad';
+        if (filter === 'region') return p.badges.includes('region');
+        return true;
+      });
+
+  count.textContent = `${filtered.length}개 사업`;
+
+  if (!filtered.length) {
+    grid.innerHTML = '';
+    empty.style.display = 'block';
+    return;
+  }
+  empty.style.display = 'none';
+
+  grid.innerHTML = filtered.map(p => `
+    <div class="prog-card fade-up" id="card-${p.id}" onclick="toggleCard(${p.id})">
+      <div class="card-top">
+        <div class="card-badges">${getBadgeHtml(p.badges)}</div>
+        <span class="card-arrow">→</span>
+      </div>
+      <div class="status-row">
+        ${getStatusHtml(p)}
+      </div>
+      <div class="card-title">${p.title}</div>
+      <div class="card-sub">${p.sub}</div>
+      <div class="timeline-row">📅 <span>${p.timeline}</span></div>
+      <div class="card-divider"></div>
+      <div class="card-meta">
+        <span class="meta-scale">${p.scale}</span>
+      </div>
+      <div class="card-detail">
+        <p style="margin-bottom:12px">${p.detail}</p>
+        ${p.selected && p.selected.length > 0 ? `
+        <div class="selected-list">
+          <div class="selected-list-title">선정 대학/기관</div>
+          <div class="selected-chips">${p.selected.map(s => `<span class="selected-chip">${s}</span>`).join('')}</div>
+        </div>` : ''}
+        ${p.extra && p.extra.types ? `
+        <div class="extra-types">
+          ${p.extra.types.map(t => `
+            <div class="extra-type-block">
+              <div class="extra-type-name">${t.name}</div>
+              <div class="extra-type-desc">${t.desc}</div>
+              <div class="extra-type-table">
+                ${Object.entries(t.univ).map(([cat, arr]) => `
+                  <div class="extra-cat-row">
+                    <span class="extra-cat-label">${cat}</span>
+                    <div class="selected-chips" style="margin-top:4px">${arr.map(s => `<span class="selected-chip">${s}</span>`).join('')}</div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>` : ''}
+        <div class="card-link-row" style="margin-top:14px">
+          ${p.links.map(l => `
+            <a href="${l.url}" target="_blank" rel="noopener"
+               class="card-link ${l.primary ? 'card-link-primary' : 'card-link-secondary'}"
+               onclick="event.stopPropagation()">
+              ${l.label} ↗
+            </a>
+          `).join('')}
+        </div>
+      </div>
+      <div class="expand-btn">
+        <span>상세 보기</span>
+        <span class="expand-icon">▼</span>
+      </div>
+    </div>
+  `).join('');
+
+  requestAnimationFrame(() => {
+    document.querySelectorAll('.prog-card.fade-up').forEach((el, i) => {
+      setTimeout(() => el.classList.add('visible'), i * 40);
+    });
+  });
+}
+
+function toggleCard(id) {
+  const el = document.getElementById('card-' + id);
+  if (!el) return;
+  el.classList.toggle('expanded');
+  const btn = el.querySelector('.expand-btn span:first-child');
+  if (btn) btn.textContent = el.classList.contains('expanded') ? '접기' : '상세 보기';
+}
+
+function setFilter(btn, filter) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderCards(filter);
+}
+
+function getChartColor(program) {
+  if (program.badges && program.badges.includes('region')) return '#7C3AED';
+  if (program.dept === 'msit') return '#2B7FFF';
+  if (program.dept === 'moel') return '#BE123C';
+  return '#00C48C';
+}
+
+function renderChart() {
+  const items = PROGRAMS
+    .filter(p => typeof p.barVal === 'number' && p.barVal > 0)
+    .map(p => ({
+      label: p.title,
+      val: p.barVal,
+      color: getChartColor(p),
+    }))
+    .sort((a, b) => b.val - a.val);
+
+  const max = items.length ? Math.max(...items.map(it => it.val)) : 1;
+  const el = document.getElementById('barChart');
+  el.innerHTML = items.map(it => `
+    <div class="bar-row">
+      <span class="bar-label">${it.label}</span>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:${Math.round(it.val / max * 100)}%;background:${it.color}"></div>
+      </div>
+      <span class="bar-val">연 ${it.val >= 9 ? Math.round(it.val) : it.val}억</span>
+    </div>
+  `).join('');
+}
+
+// GNB scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('gnb').classList.toggle('scrolled', window.scrollY > 20);
+  document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 300);
+});
+
+// IntersectionObserver for fade-up
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1 });
+
+function observeFadeUps() {
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+}
+
+function setUpdatedAt(updatedAt) {
+  LAST_UPDATED = updatedAt || '';
+  document.getElementById('gnbUpdated').textContent = LAST_UPDATED
+    ? `최종 업데이트: ${LAST_UPDATED}`
+    : '최종 업데이트: -';
+}
+
+function showLoadError(message) {
+  document.getElementById('sectionCount').textContent = '데이터 로드 실패';
+  document.getElementById('cardsGrid').innerHTML = '';
+  const empty = document.getElementById('emptyState');
+  empty.style.display = 'block';
+  const text = empty.querySelector('p');
+  if (text) text.textContent = message;
+}
+
+function calcBudget(items) {
+  return items.reduce((s, i) => s + i.amt, 0);
+}
+
+function switchRank(btn, type) {
+  document.querySelectorAll('.rtab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.rank-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById(type === 'count' ? 'rankCount' : 'rankBudget').classList.add('active');
+  // 전체 리스트도 탭 동기화
+  document.querySelectorAll('.rank-all-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById(type === 'count' ? 'rankAllCount' : 'rankAllBudget').classList.add('active');
+  window._rankType = type;
+}
+
+let _rankExpanded = false;
+let _rankType = 'count';
+
+function toggleAllRanks() {
+  _rankExpanded = !_rankExpanded;
+  const wrap = document.getElementById('rankAllWrap');
+  const btn  = document.getElementById('rankExpandBtn');
+  const lbl  = document.getElementById('rankExpandLabel');
+  wrap.style.display = _rankExpanded ? 'block' : 'none';
+  btn.classList.toggle('open', _rankExpanded);
+  lbl.textContent = _rankExpanded ? '접기' : '전체 대학 보기';
+}
+
+function renderRanking() {
+  const medalClass = ['gold','silver','bronze','',''];
+  const medals = ['🥇','🥈','🥉','4','5'];
+
+  const byCount  = [...UNIV_DATA]
+    .map(u => ({...u, count: u.programs.length, budget: calcBudget(u.budgetItems)}))
+    .sort((a,b) => b.count - a.count || b.budget - a.budget);
+
+  const byBudget = [...UNIV_DATA]
+    .map(u => ({...u, count: u.programs.length, budget: calcBudget(u.budgetItems)}))
+    .sort((a,b) => b.budget - a.budget || b.count - a.count);
+
+  // Top5 카드
+  function renderTop5(arr, mode) {
+    return `<div class="rank-list">${arr.slice(0,5).map((u,i) => `
+      <div class="rank-item ${medalClass[i]}">
+        <div class="rank-num">${medals[i]}</div>
+        <div class="rank-body">
+          <div class="rank-name">${u.name}</div>
+          <div class="rank-programs">
+            ${u.programs.map(p=>`<span class="rank-prog-chip">${p}</span>`).join('')}
+          </div>
+        </div>
+        <div class="rank-value">
+          ${mode === 'count'
+            ? `<div class="rank-value-main">${u.count}개</div><div class="rank-value-sub">연 약 ${u.budget.toLocaleString()}억</div>`
+            : `<div class="rank-value-main">연 약 ${u.budget.toLocaleString()}억</div><div class="rank-value-sub">${u.count}개 사업</div>`
+          }
+        </div>
+      </div>
+    `).join('')}</div>`;
+  }
+
+  // 전체 그리드
+  function renderAll(arr, mode) {
+    return `
+      <div class="rank-all-title">전체 ${arr.length}개 대학 — ${mode === 'count' ? '사업 수' : '예산'} 순위</div>
+      <div class="rank-all-grid">
+        ${arr.map((u,i) => `
+          <div class="rank-all-item">
+            <div class="rank-all-num">${i+1}</div>
+            <div class="rank-all-body">
+              <div class="rank-all-name">${u.name}</div>
+              <div class="rank-all-programs">${u.programs.join(' · ')}</div>
+            </div>
+            <div class="rank-all-value">
+              ${mode === 'count' ? `${u.count}개` : `연 ${u.budget}억`}
+            </div>
+          </div>
+        `).join('')}
+      </div>`;
+  }
+
+  document.getElementById('rankCount').innerHTML  = renderTop5(byCount,  'count');
+  document.getElementById('rankBudget').innerHTML = renderTop5(byBudget, 'budget');
+  document.getElementById('rankAllCount').innerHTML  = renderAll(byCount,  'count');
+  document.getElementById('rankAllBudget').innerHTML = renderAll(byBudget, 'budget');
+}
+
+async function loadData() {
+  const response = await fetch(DATA_URL, { cache: 'no-store' });
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+
+  const payload = await response.json();
+  PROGRAMS = Array.isArray(payload.programs) ? payload.programs : [];
+  UNIV_DATA = Array.isArray(payload.univData) ? payload.univData : [];
+  setUpdatedAt(payload.updatedAt);
+}
+
+function renderApp() {
+  renderCards(currentFilter);
+  renderChart();
+  renderRanking();
+  observeFadeUps();
+}
+
+async function initApp() {
+  setUpdatedAt('로딩 중');
+
+  try {
+    await loadData();
+    renderApp();
+  } catch (error) {
+    console.error('Failed to load programs data', error);
+    setUpdatedAt('데이터 로드 실패');
+    showLoadError('programs.json 파일을 불러오지 못했습니다. 배포 경로나 정적 서버 설정을 확인해 주세요.');
+  }
+}
+
+initApp();
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Keep the public repo limited to the static site assets.
+*
+!.gitignore
+!index.html
+!styles.css
+!programs.json
