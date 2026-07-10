@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10 18:37",
+  "updatedAt": "2026-07-10 18:48",
   "programs": [
     {
       "id": 1,
@@ -10,7 +10,7 @@
       "target": "univ",
       "status": "ongoing",
       "statusLabel": "추가 선정 공고",
-      "timeline": "2026-07-03",
+      "timeline": "2026.07.03 ~ 2026.08.04",
       "scale": "연 30억 / 교 (8년, 총 240억)",
       "barVal": 30,
       "selected": [],
