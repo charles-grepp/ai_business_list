@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13 10:45",
+  "updatedAt": "2026-10-15T19:52+09:00",
   "programs": [
     {
       "id": 1,
@@ -8,13 +8,34 @@
       "dept": "msit",
       "isNew": true,
       "target": "univ",
-      "status": "ongoing",
-      "statusLabel": "사업 확대",
-      "timeline": "2026.07.02: 비수도권 8개교 추가 선정 공고 (~2026.08.04)",
-      "scale": "연 30억 / 교 (8년, 총 240억)",
+      "status": "done",
+      "statusLabel": "18개교 선정 완료·사업 출범",
+      "timeline": "2026.09.29: AI중심대학 18개교 공동 출범 → 2027년 미전환 SW중심대학 38개교 전환 추진",
+      "scale": "연 30억 / 교 (최장 8년)",
       "barVal": 30,
-      "selected": [],
-      "detail": "2026년 10개교 중 7개교 1차 선정 완료. 나머지 3개교는 기존 SW중심대학 외 일반대학 신규 선정으로 추가 발표 예정. 2030년까지 30개교로 확대 목표. AI전문인재 + AX융합인재 양성 이원 체계.",
+      "selected": [
+        "국립금오공과대",
+        "포항공과대",
+        "한양대",
+        "가천대",
+        "건양대",
+        "고려대(세종)",
+        "고려대",
+        "국립군산대",
+        "동아대",
+        "목원대",
+        "서강대",
+        "성균관대",
+        "국립순천대",
+        "순천향대",
+        "숭실대",
+        "연세대",
+        "조선대",
+        "한림대"
+      ],
+      "selectionCoverage": "전체 18개교",
+      "detail": "2026년 신규 3개교와 SW중심대학 전환 15개교 등 총 18개교 선정 완료. 비수도권 11개교 포함. 전교생 AI 기초교육 의무화, AI 전공교육 및 전공 연계 융합교과 확대를 추진한다. 선정 명단은 POSTECH AI대학원이 9월 30일 게시한 출범식 보도를 바탕으로 보완했다.",
+      "lastVerifiedAt": "2026-10-15",
       "badges": [
         "msit",
         "new",
@@ -22,9 +43,19 @@
       ],
       "links": [
         {
+          "label": "과기정통부 18개교 출범 발표 (2026.09.29)",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972767",
+          "primary": true
+        },
+        {
+          "label": "POSTECH 게시 출범식 보도·18개교 명단",
+          "url": "https://ai.postech.ac.kr/news/view/id/936",
+          "primary": false
+        },
+        {
           "label": "IITP 공고",
           "url": "https://ezone.iitp.kr/common/tskanno/list",
-          "primary": true
+          "primary": false
         },
         {
           "label": "선정결과 기사",
@@ -35,18 +66,36 @@
     },
     {
       "id": 2,
-      "title": "AI혁신인재양성 (AX대학원)",
+      "title": "AI혁신인재양성 (AX대학원·AI혁신대학원)",
       "sub": "기업 컨소시엄 기반 AX 특화 대학원 운영",
       "dept": "msit",
       "isNew": true,
       "target": "grad",
-      "status": "ongoing",
-      "statusLabel": "선정 진행 중 (비수도권 대학 추가 모집 예정)",
-      "timeline": "최초 공고 2026.02.19, 비수도권 대학 대상 추가 모집 공고 예정 (2026.07)",
-      "scale": "연 15억 / 교 (10개 선정)",
-      "barVal": 15,
-      "selected": [],
-      "detail": "분야지정 5개 + 자유공모 5개 트랙. 공고기간 종료, 심사 진행 중. AI대학원 기 수행 7개교(고려대·서울대·성균관대·연세대·중앙대·포항공대·한양대)는 자유공모 신청 불가. X+AI 11개 지정분야 중 최대 2개 선택.",
+      "status": "done",
+      "statusLabel": "15개교 선정 완료·사업 출범",
+      "timeline": "2026.02: 신규 공고 → 2026.09.29: AX대학원 15개교 공동 출범",
+      "scale": "연 30억 / 교 (최장 6년, 15개교)",
+      "barVal": 30,
+      "selected": [
+        "국립경국대",
+        "국립금오공과대",
+        "서강대",
+        "성균관대",
+        "세종대",
+        "국립순천대",
+        "순천향대",
+        "연세대",
+        "인하대",
+        "국립창원대",
+        "포항공과대",
+        "한국에너지공과대",
+        "한림대",
+        "한양대",
+        "한양대(ERICA)"
+      ],
+      "selectionCoverage": "전체 15개 선정 단위 (한양대 서울·ERICA 구분)",
+      "detail": "인공지능 혁신대학원(AX대학원)은 인공지능혁신인재양성 사업의 대학원 지원이다. 2026년 15개 선정 단위(비수도권 8개), 26개 기업 참여. 대학과 기업이 AX연구협력센터를 설치하고 공동연구, 복수 지도교수제, 프로젝트 기반 교육으로 석·박사급 융합인재를 양성한다. POSTECH 게시 출범식 보도로 전체 명단을 보완했으며, 한양대 서울과 ERICA는 별도 선정 단위로 기재했다.",
+      "lastVerifiedAt": "2026-10-15",
       "badges": [
         "msit",
         "new",
@@ -54,41 +103,24 @@
       ],
       "links": [
         {
-          "label": "IITP 공고 상세",
-          "url": "https://bioin.or.kr/board.do?bid=notice&cmd=view&num=332671",
+          "label": "과기정통부 AX대학원 15개교 출범 발표",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972767",
           "primary": true
         },
         {
-          "label": "IITP 공고 목록",
-          "url": "https://ezone.iitp.kr/common/tskanno/list",
+          "label": "POSTECH 게시 출범식 보도·15개 선정 단위",
+          "url": "https://ai.postech.ac.kr/news/view/id/936",
           "primary": false
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "AI혁신대학원",
-      "sub": "산업체 협력 심화형 대학원 신규 선정",
-      "dept": "msit",
-      "isNew": true,
-      "target": "grad",
-      "status": "ongoing",
-      "statusLabel": "선정 진행 중",
-      "timeline": "공고 2026.02.19 → 접수 2026.03.12~25 → 선정 2026년 상반기 중",
-      "scale": "연 30억 / 교 (최대 6년 165억)",
-      "barVal": 30,
-      "selected": [],
-      "detail": "2026년 150억 투입, 10개교 신규 선정. 분야지정 5개·자유공모 5개 트랙. 대학+기업 컨소시엄 필수, 40명 이상 대학원생 의무. 2030년 22개교 확대 목표.",
-      "badges": [
-        "msit",
-        "new",
-        "grad"
-      ],
-      "links": [
+        },
         {
-          "label": "관련 기사",
-          "url": "https://www.irobotnews.com/news/articleView.html?idxno=44998",
-          "primary": true
+          "label": "AI혁신대학원·AX대학원 명칭 확인",
+          "url": "https://m.korea.kr/briefing/pressReleaseView.do?newsId=156745205",
+          "primary": false
+        },
+        {
+          "label": "IITP 공고 상세",
+          "url": "https://bioin.or.kr/board.do?bid=notice&cmd=view&num=332671",
+          "primary": false
         },
         {
           "label": "IITP 공고 목록",
@@ -145,22 +177,28 @@
       "target": "univ",
       "status": "done",
       "statusLabel": "기 운영 중",
-      "timeline": "2015년~현재 운영 (연차평가 지속)",
+      "timeline": "2015년~현재 운영 → 2027년 미전환 38개교 AI중심대학 전환 추진",
       "scale": "연 20억 / 교",
       "barVal": 20,
       "selected": [
-        "(AI중심대학 미전환 기존 선정교 전체, 약 40개교 이상)"
+        "(미전환 SW중심대학 38개교; 개별 명단 별도 확인 필요)"
       ],
-      "detail": "AI중심대학 전환되지 않은 기존 SW중심대학 지속 운영. AI·SW중심대학협의회 공동 워크숍·경진대회 운영.",
+      "detail": "2026.09.29 과기정통부 발표에서 미전환 SW중심대학 38개교를 확인했다. 2027년에 평가를 거쳐 AI중심대학으로 전면 전환할 계획이며, 전환 완료 여부는 후속 공고로 확인해야 한다.",
+      "lastVerifiedAt": "2026-10-06",
       "badges": [
         "msit",
         "univ"
       ],
       "links": [
         {
+          "label": "과기정통부 2027년 전환 계획",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148972767",
+          "primary": true
+        },
+        {
           "label": "AI·SW중심대학협의회",
           "url": "https://www.swuniv.kr",
-          "primary": true
+          "primary": false
         }
       ]
     },
@@ -241,9 +279,18 @@
       "scale": "최대 6년 27억 / 교",
       "barVal": 4.5,
       "selected": [
-        "(기 선정교 운영 중, 추가 공고 시 모집)"
+        "고려대(세종)",
+        "세종대",
+        "성신여대",
+        "충남대",
+        "전남대",
+        "KAIST",
+        "강원대",
+        "동서대",
+        "동의대",
+        "한국해양대"
       ],
-      "detail": "융합보안대학원과 함께 「사이버 10만 인재 양성」 방안 일환. 학부 수준 보안 특화 과정 운영.",
+      "detail": "융합보안대학원과 함께 「사이버 10만 인재 양성」 방안 일환. 학부 수준 보안 특화 과정 운영. 명단 보완: 비어 있던 지원 대학 명단을 발표자료 범위에서 보완. 전체 현황에 대한 정부 최종선정 공고로 취급하지 않음.",
       "badges": [
         "msit",
         "univ"
@@ -253,8 +300,15 @@
           "label": "사업 안내",
           "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148931448",
           "primary": true
+        },
+        {
+          "label": "명단 보완 근거 / PDF 3쪽",
+          "url": "https://wise.k-cgsa.org/files/2fd8ecca-6021-454c-87a5-7ccec026d420/download",
+          "primary": false
         }
-      ]
+      ],
+      "selectionCoverage": "KISA 발표자의 2026 WISE 발표자료에 기재된 지원 대학 10개교; 최종 선정 공고 명단과 별도 구분",
+      "lastVerifiedAt": "2026-10-15"
     },
     {
       "id": 9,
@@ -297,16 +351,37 @@
       "status": "done",
       "statusLabel": "선정 완료",
       "timeline": "공고 2026.02.04 → 선정 2026.05.11",
-      "scale": "교당 최대 10억 (총 240억)",
+      "scale": "사업단당 2026년 최대 10억 (2년 지원, 24개 사업단)",
       "barVal": 10,
       "selected": [
+        "경민대",
         "경복대",
-        "동의과학대",
-        "연성대",
+        "대림대",
+        "부천대",
+        "청강문화산업대",
+        "연성대 (동양미래대·인하공업전문대)",
+        "유한대 (안산대)",
+        "계명문화대",
+        "구미대",
+        "대구과학대",
         "영남이공대",
-        "유한대 외 35개교 → 24개 사업단"
+        "영진전문대",
+        "순천제일대 (조선이공대)",
+        "전주비전대 (전주기전대)",
+        "제주한라대 (군장대·한영대)",
+        "동의과학대",
+        "연암공과대",
+        "울산과학대",
+        "경남정보대 (마산대·춘해보건대)",
+        "강원도립대",
+        "충북보건과학대",
+        "한림성심대",
+        "대전보건대 (우송정보대)",
+        "연암대 (혜전대)"
       ],
-      "detail": "24개 사업단, 35개교 선정 완료. AI·DX 실습환경 구축, 생성형 AI 계정 보급, 지역주민·재직자 맞춤 교육 포함.",
+      "selectionCoverage": "24개 사업단, 참여 35개교; 괄호 안은 공동 참여 대학",
+      "detail": "교육부 2026.07.01 공개자료의 24개 사업단과 공동 참여 대학 구성을 반영했다. 2년간 재정 지원하며 2026년 사업단당 최대 10억 원을 지원한다. AI·DX 실습환경, 생성형 AI 이용 계정, 재학생과 지역주민·재직자 교육을 지원한다. 명단은 사업단 단위이며 괄호는 공동 참여 대학이다.",
+      "lastVerifiedAt": "2026-10-15",
       "badges": [
         "moe",
         "new",
@@ -314,9 +389,14 @@
       ],
       "links": [
         {
+          "label": "교육부 24개 AID 사업단·참여대학 명단",
+          "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=340&boardSeq=106608&lev=0&opType=N&page=2&s=moe",
+          "primary": true
+        },
+        {
           "label": "교육부 보도자료",
           "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105277&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
-          "primary": true
+          "primary": false
         },
         {
           "label": "선정결과 기사",
@@ -334,11 +414,34 @@
       "target": "univ",
       "status": "done",
       "statusLabel": "최종 선정 완료",
-      "timeline": "최종 확정 2026.06",
-      "scale": "교당 3억 (총 60억)",
+      "timeline": "2026.04.23: 선정평가 결과 발표 → 2026.06.01: 대교협 20개교 선정 안내",
+      "scale": "연 3억 이내 / 교 (2년 지원, 20개교)",
       "barVal": 3,
-      "selected": [],
-      "detail": "수도권 6개교·비수도권 14개교 잠정 선정. 이의제기 및 AI중심대학 선정 여부 확인 후 6월 최종 확정. 비공학계열 소단위 전공과정 + K-MOOC 탑재.",
+      "selected": [
+        "덕성여대",
+        "동국대",
+        "서울여대",
+        "세종대",
+        "용인대",
+        "한국외대",
+        "건국대(GLOCAL)",
+        "경운대",
+        "국립경국대",
+        "국립한밭대",
+        "동국대(WISE)",
+        "동명대",
+        "동신대",
+        "동의대",
+        "부산외대",
+        "송원대",
+        "순천향대",
+        "전주대",
+        "창신대",
+        "한라대"
+      ],
+      "selectionCoverage": "교육부 2026.05.12 공개 선정평가 명단 20개교; 최종 변경 여부 별도 확인",
+      "detail": "교육부 2026.05.12 공개자료의 수도권 6개교, 비수도권 14개교 선정평가 명단을 기재했다. 대교협은 6월 1일 20개교 선발을 안내했다. 교당 매년 3억 원 이내로 2년간 AI 기본교양, 비공학계열 활용 소단위 전공, 교수자 AI 역량 강화를 지원한다. 이 명단은 공개 선정평가 결과이며 이후 최종 변경 여부는 별도 확인이 필요하다.",
+      "lastVerifiedAt": "2026-10-15",
       "badges": [
         "moe",
         "new",
@@ -346,9 +449,19 @@
       ],
       "links": [
         {
+          "label": "교육부 20개교 공개 명단·2년 지원 안내",
+          "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=340&boardSeq=106138&lev=0&m=020502",
+          "primary": false
+        },
+        {
+          "label": "대교협 20개교 선정 안내 (2026.06.01)",
+          "url": "https://kcue.or.kr/academic/usr/wap/detail.do?app=15451&seq=4604952",
+          "primary": true
+        },
+        {
           "label": "선정결과 기사",
           "url": "https://biz.heraldcorp.com/article/10724038",
-          "primary": true
+          "primary": false
         },
         {
           "label": "교육부 공고",
@@ -391,14 +504,24 @@
       "isNew": false,
       "target": "univ",
       "status": "done",
-      "statusLabel": "운영 중 (신규 모집 2026.04)",
-      "timeline": "공고 2026.02.20 → 신규 접수 ~2026.04.07 → 운영 2026년",
-      "scale": "38개교 운영 (2026 확대)",
+      "statusLabel": "2026년 신규 9개 운영대학 선정 확인",
+      "timeline": "2026.05.20: 신규 운영기관 9개교 선정 결과 발표(5월 19일 배포 보도자료 기준) → 신규 과정은 2026년 9월 이후 수강 가능하다고 안내",
+      "scale": "2026년 38개교 내외 확대 계획 (최종 선정 수 별도 확인)",
       "barVal": 0,
       "selected": [
-        "(기존 30개교 연차 운영 + 신규 8개교 추가 선정 중)"
+        "계원예술대",
+        "동국대",
+        "명지대",
+        "명지전문대",
+        "춘해보건대",
+        "대구한의대",
+        "서강대",
+        "서울디지털대",
+        "순천향대"
       ],
-      "detail": "집중캠프(4주 온·오프) + 묶음강좌(온라인) 두 유형. 총장 명의 디지털 배지 발급. 2025년 11,683명 수료.",
+      "detail": "교육부 2026.05.19 보도자료에서 30+ 집중캠프 5개교(계원예술대, 동국대, 명지대, 명지전문대, 춘해보건대), 묶음강좌 4개교(대구한의대, 서강대, 서울디지털대, 순천향대)를 신규 선정했다. 신규 과정은 개발 후 2026년 9월 이후부터 수강 가능하다고 안내했다. 당초 계획 38개교 및 후속 보도의 전체 운영 규모와 신규 선정 9개교는 구분해야 한다.",
+      "lastVerifiedAt": "2026-10-15",
+      "selectionCoverage": "2026년 신규 선정 9개교만 수록: 집중캠프 5개교, 묶음강좌 4개교. 전체 운영대학 명단 아님",
       "badges": [
         "moe",
         "univ"
@@ -408,6 +531,11 @@
           "label": "교육부 보도자료",
           "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105371&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
           "primary": true
+        },
+        {
+          "label": "명단 보완 근거 / PDF 3-4쪽, 9-10쪽",
+          "url": "https://eiec.kdi.re.kr/policy/callDownload.do?dtime=20260519181600&filenum=1&num=281251",
+          "primary": false
         }
       ]
     },
@@ -423,8 +551,19 @@
       "timeline": "상시 운영",
       "scale": "국가평생교육진흥원 주관",
       "barVal": 0,
-      "selected": [],
-      "detail": "AI 기본교육과정 사업 성과 연계 확산. 누구나 무료 수강. 대학 간 콘텐츠 공유 채널.",
+      "selected": [
+        "건국대(글로컬)",
+        "부산대",
+        "서울대",
+        "성균관대",
+        "울산대",
+        "이화여대",
+        "중앙대",
+        "광운대",
+        "세종대",
+        "한성대"
+      ],
+      "detail": "기존 K-MOOC 플랫폼은 상시 운영된다. 교육부 2026.05.19 보도자료는 신규 4단계 무크선도대학 10개교(자율 7, AI/디지털 3), 개별강좌 14개, 방송강좌 운영기관 EBS를 선정했다고 발표했다. 신규 강좌는 이르면 10월 말부터 수강 가능하다고 안내했으며, 실제 개강 여부는 별도로 확인해야 한다.",
       "badges": [
         "moe",
         "univ"
@@ -434,8 +573,15 @@
           "label": "K-MOOC 플랫폼",
           "url": "https://www.kmooc.kr",
           "primary": true
+        },
+        {
+          "label": "명단 보완 근거 / PDF 1-2쪽",
+          "url": "https://eiec.kdi.re.kr/policy/callDownload.do?dtime=20260519181600&filenum=1&num=281251",
+          "primary": false
         }
-      ]
+      ],
+      "selectionCoverage": "2026년 신규 4단계 무크선도대학 10개교만 수록; 전체 K-MOOC 참여대학 명단 아님",
+      "lastVerifiedAt": "2026-10-15"
     },
     {
       "id": 15,
@@ -471,15 +617,22 @@
       "isNew": true,
       "target": "univ",
       "status": "done",
-      "statusLabel": "운영기관 선정 완료",
-      "timeline": "공고 2026.01.07~27 → 기관 선정 2026년 3~4월 → 과정 운영 중",
+      "statusLabel": "44개 운영기관 선정·훈련 운영",
+      "timeline": "2026.04.14: 44개 기관 확정 → 2026.05부터 기관별 모집·운영",
       "scale": "연간 총 1,300억 / 1만 명 양성 목표",
       "barVal": 26,
       "selected": [
-        "인하대 (자율주행 SW, 26억)",
-        "(서울대 등 대학·기업·훈련기관 포함 다수 선정)"
+        "성균관대",
+        "고려대",
+        "경북대",
+        "국립부경대",
+        "차의과학대",
+        "인하대",
+        "동국대"
       ],
-      "detail": "AI 엔지니어·앱 개발자·융합가·HW 엔지니어 4개 직군. PBL 30% 이상 필수. 수도권 월 40만·비수도권 60만·인구감소 80만 원 훈련수당.",
+      "detail": "2026.04.14 고용노동부 발표 기준 기업 21개, 대학 7개, 훈련기관 16개 등 총 44개 기관 선정. 붙임3 선정기관 목록에서 기존 명단에 빠졌던 동국대를 확인했다. selected는 대학 7개교만 수록하며 전체 44개 기관 명단과 구분한다. 이후 기관별 개별 모집 및 운영 현황은 별도 확인해야 한다.",
+      "selectionCoverage": "2026.04.14 보도자료 붙임3 선정기관 목록의 대학 7개교; 기업/훈련기관을 포함한 전체 44개소 중 대학만 수록",
+      "lastVerifiedAt": "2026-10-15",
       "badges": [
         "moel",
         "new",
@@ -488,12 +641,17 @@
       "links": [
         {
           "label": "고용노동부 공식 발표",
-          "url": "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18833",
+          "url": "https://moel.go.kr/news/enews/report/enewsView.do?news_seq=19240",
           "primary": true
         },
         {
           "label": "Work24 훈련 찾기",
           "url": "https://www.work24.go.kr/hr/a/a/1100/trnnCrsInf2.do?pageId=6",
+          "primary": false
+        },
+        {
+          "label": "명단 보완 근거 / PDF 11쪽, 붙임3 연번 22-28",
+          "url": "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19240",
           "primary": false
         }
       ]
@@ -511,11 +669,30 @@
       "scale": "연 5억 / 센터 (3년간 총 15억)",
       "barVal": 5,
       "selected": [
-        "이스트소프트+제주한라대",
-        "포항공대 컨소시엄 (경북)",
-        "(전국 8개 권역 20개소 선정 완료)"
+        "성균관대학교+(재)경기도경제과학진흥원",
+        "카이스트+한국산업단지공단",
+        "이화의대부속서울병원+글로벌소프트웨어캠퍼스",
+        "한국인공지능소프트웨어산업협회",
+        "한국전파진흥협회",
+        "한국지능형교통체계협회",
+        "사단법인 한국화학안전협회",
+        "한국기술교육대학교",
+        "청주대학교+(사)이노비즈협회충북지회",
+        "(재)경북IT융합산업기술원+아진산업(주)",
+        "포항공과대학교+경북ICT융합산업진흥협회",
+        "한국로봇융합연구원",
+        "인공지능산업융합사업단+전남대학교",
+        "국립순천대학교",
+        "울산정보산업진흥원+한국표준협회",
+        "현대차/기아+(주)한국능률협회컨설팅",
+        "국립한국해양대학교",
+        "원주미래산업진흥원",
+        "캠틱종합기술원",
+        "(주)이스트소프트+제주한라대학교"
       ],
-      "detail": "전국 20개소 선정. 기존 훈련비의 300% 고단가 훈련비 지원. 거점형 추가 1억. 5월부터 공동훈련 본격 운영.",
+      "detail": "고용노동부 2026.03.30 발표에서 20개소 선정과 5월부터 공동훈련 실시 계획을 확인했다. 대기업·거점 대학의 인프라를 활용해 중소기업 노동자에게 무상 AI 특화훈련을 제공한다. 기존 선정 기관 예시는 이번에 개별 재검증하지 않았다. 명단 보완: 기존 예시 명단을 선정기관 전체 20개 센터로 보완.",
+      "selectionCoverage": "2026.03.30 고용노동부 보도자료 붙임2의 AI 특화 공동훈련센터 20개소 전체. 연합기관 묶음을 1개 센터로 계산",
+      "lastVerifiedAt": "2026-10-15",
       "badges": [
         "moel",
         "new",
@@ -523,9 +700,14 @@
       ],
       "links": [
         {
+          "label": "고용노동부 20개 공동훈련센터 선정 발표",
+          "url": "https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19141",
+          "primary": true
+        },
+        {
           "label": "한국산업인력공단 공고",
           "url": "https://www.hrdkorea.or.kr/3/1/1?k=55281",
-          "primary": true
+          "primary": false
         },
         {
           "label": "고용노동부 보도자료",
@@ -544,12 +726,23 @@
       "status": "done",
       "statusLabel": "운영 중 (2026.04~)",
       "timeline": "공고 2026.01 → 선정 2026.03 → 코치 활동 2026.04~",
-      "scale": "전국 10개소, AI 훈련코치 약 500명",
+      "scale": "10개소, 전문인력 약 500명 (민간 AI훈련코치 약 200명 포함)",
       "barVal": 0,
       "selected": [
-        "(전국 5극3특 권역별 10개소 선정)"
+        "경기경영자총협회",
+        "대한상공회의소 경기인력개발원",
+        "(주)캐럿글로벌",
+        "한국표준협회",
+        "한국문화산업협회",
+        "한국생산성본부",
+        "경북경영자총협회",
+        "광주산학융합원",
+        "경남경영자총협회",
+        "부산벤처기업협회"
       ],
-      "detail": "민간 코치 약 200명이 지역 중소기업 2만5천 개소 방문. 기업별 훈련 로드맵 수립(2천개소), S-OJT(600개소) 연계.",
+      "detail": "고용노동부 2026.03.30 발표 기준 AI확산센터 10개소 선정. 민간 AI훈련코치 약 200명과 공단 능력개발전담주치의 등을 포함한 전문인력 약 500명이 중소기업 2만5천개소 방문·진단을 지원한다. 민간 코치는 4월 둘째 주부터 활동하며 기업별 훈련 로드맵 2천개소, S-OJT 600개소 연계 계획이다. 명단 보완: 기존 규모 요약을 전체 10개 센터 명단으로 보완.",
+      "selectionCoverage": "2026.03.30 고용노동부 보도자료 붙임2의 중소기업 AI훈련확산센터 10개소 전체",
+      "lastVerifiedAt": "2026-10-15",
       "badges": [
         "moel",
         "new"
@@ -672,22 +865,19 @@
     {
       "id": 22,
       "title": "첨단분야 혁신융합대학 (COSS)",
-      "sub": "AI·반도체 등 8개 첨단분야 컨소시엄 교육",
+      "sub": "AI·반도체 등 18개 첨단분야 컨소시엄 공동교육",
       "dept": "moe",
       "isNew": false,
       "target": "univ",
       "status": "done",
-      "statusLabel": "기 운영 중 (2026년 마지막 해)",
-      "timeline": "2021~2026년 6년 사업, 2026년 종료 예정",
-      "scale": "연간 총 816억 (컨소시엄당 연 102억)",
-      "barVal": 102,
-      "selected": [
-        "AI분야 주관: 성균관대 외",
-        "빅데이터: 고려대 외",
-        "반도체: 서강대 외",
-        "(8개 분야, 총 18개 연합체, 46개교)"
-      ],
-      "detail": "2026년 사업 종료. 후속 사업 설계 논의 중. 46개교 운영, 마이크로디그리 발급.",
+      "statusLabel": "18개 컨소시엄 운영·선정연도별 기간 상이",
+      "timeline": "2021·2023년 선정 컨소시엄: ~2027.02 / 2024년 선정: ~2028.02 (제주 RISE 안내 기준)",
+      "scale": "18개 컨소시엄 지원; 2026년 컨소시엄별 지원액 별도 확인",
+      "barVal": 0,
+      "selected": [],
+      "selectionCoverage": "18개 컨소시엄 규모 확인; 개별 대학 명단 재확인 필요",
+      "detail": "2026년 COSS 공식 행사에서 18개 첨단분야 운영을 확인했다. 제주 RISE 안내는 지원 대상 18개 컨소시엄, 총 67개교로 기재하며 사업기간을 선정연도별로 구분한다. 모든 사업이 2026년에 종료된다는 기존 표현과 오래된 연간 816억·46개교 수치는 제거했다. 2026년 실제 배정액과 개별 참여 대학 명단은 별도 확인이 필요하다.",
+      "lastVerifiedAt": "2026-10-15",
       "badges": [
         "moe",
         "region",
@@ -698,6 +888,16 @@
           "label": "COSS 공식홈페이지",
           "url": "https://www.cossnet.com",
           "primary": true
+        },
+        {
+          "label": "2026 COSS 18개 분야 운영 안내",
+          "url": "https://www.cossnet.com/coshow/event/table",
+          "primary": false
+        },
+        {
+          "label": "제주 RISE 사업기간·지원대상 안내",
+          "url": "https://www.jejurise.kr/news/business/rise.htm?act=download&no=5&seq=2322",
+          "primary": false
         }
       ]
     },
@@ -709,16 +909,18 @@
       "isNew": false,
       "target": "univ",
       "status": "done",
-      "statusLabel": "기 운영 중",
-      "timeline": "2022~2026년 5년 사업 (연차 운영 중)",
-      "scale": "기술혁신선도형 연 55억 / 수요맞춤형 연 40억",
-      "barVal": 55,
+      "statusLabel": "RISE 통합·기존 LINC 선정 이력",
+      "timeline": "2022년 LINC 3.0 출범 → 2025년부터 RISE 예산으로 통합",
+      "scale": "과거 유형별 지원액: 연 55억·40억 / 현재 지원액은 RISE 과제별 확인",
+      "barVal": 0,
       "selected": [
         "기술혁신선도형(연 55억): 경희대·건국대·고려대·성균관대·연세대·한양대 등 13개교",
         "수요맞춤형(연 40억): 53개교",
         "협력기반구축형: 10개교 (전체 76개교)"
       ],
-      "detail": "2025년부터 RISE 체계와 연계. ICC 기반 AI 산학공동 기술개발 포함. 2026년 사업 종료 예정.",
+      "detail": "LINC 3.0은 RIS·LiFE·HiVE 등과 함께 2025년 예산부터 RISE로 통합됐다. 선정 명단은 과거 LINC 참여 이력이며, 과거 유형별 연 55억·40억 원을 현재 대학별 지원액으로 합산하면 안 된다. 현재 산학협력 과제와 예산은 각 지역 RISE 공고에서 확인해야 한다. 기존 2026년 독립 사업 종료 예정 표현을 정정했다.",
+      "lastVerifiedAt": "2026-10-15",
+      "selectionCoverage": "과거 LINC 선정 이력; 현재 RISE 선정 명단 아님",
       "badges": [
         "moe",
         "region",
@@ -726,9 +928,14 @@
       ],
       "links": [
         {
+          "label": "국회예산정책처 2026 예산안 분석·RISE 통합 경과",
+          "url": "https://www.nabo.go.kr/board/file/down.do?fid=33318883",
+          "primary": true
+        },
+        {
           "label": "LINC 3.0 한국연구재단",
           "url": "https://lincthree.nrf.re.kr/page/3f9e37c9-bcb3-4988-82f4-48c8489504e6",
-          "primary": true
+          "primary": false
         }
       ]
     },
@@ -840,12 +1047,22 @@
       "isNew": true,
       "target": "grad",
       "status": "ongoing",
-      "statusLabel": "신규 공고",
-      "timeline": "2026.02.09: 사업 공고, 2026.02.26 ~ 2026.03.12: 과제 접수",
-      "scale": "미정",
+      "statusLabel": "선정 과제 연구·교육 수행",
+      "timeline": "2026.02~03: 공고·접수 → 2026.06.04: 중앙대 3개 과제 선정 발표",
+      "scale": "확인된 컨소시엄별 총 82억 (3년 9개월); 전체 과제 규모 별도 확인",
       "barVal": 0.0,
-      "selected": [],
-      "detail": "국내 대학(원)과 생성AI 관련 기업·연구기관이 공동 연구를 통해 생성형 AI 분야의 초격차 기술을 주도할 석·박사급 고급 핵심 인재를 양성하는 사업입니다. 참여 학생들은 기업의 인프라와 데이터를 활용한 실무형 연구를 수행하게 됩니다.",
+      "selected": [
+        "중앙대",
+        "가천대",
+        "고려대",
+        "세종대",
+        "연세대",
+        "한양대",
+        "국민대",
+        "이화여대"
+      ],
+      "detail": "중앙대의 2026.06.04 공식 발표에서 페르소나AI, 피아스페이스, 사이냅소프트 주관 3개 컨소시엄 참여를 확인했다. 각 컨소시엄 총 82억 원, 3년 9개월 연구·교육 수행. selected는 해당 3개 컨소시엄에서 확인된 참여 대학이며 전체 사업 선정 명단은 아니다. 경량 멀티모달 AI, 산업 특화 AI 에이전트, 고신뢰 생성AI 기술과 석·박사 인재 양성을 지원한다.",
+      "lastVerifiedAt": "2026-10-06",
       "badges": [
         "과기정통부",
         "신규",
@@ -856,9 +1073,14 @@
       ],
       "links": [
         {
+          "label": "중앙대 3개 컨소시엄 선정 공식 발표",
+          "url": "https://news.cau.ac.kr/cms/FR_CON/BoardView.do?BBS_SEQ=9538&BOARD_SEQ=1&MENU_ID=10&SITE_NO=5",
+          "primary": true
+        },
+        {
           "label": "IITP 사업공고",
           "url": "https://www.iitp.kr/web/lay1/program/S1T44C51/iris/view.do?seq=3",
-          "primary": true
+          "primary": false
         },
         {
           "label": "IRIS 사업공고",
@@ -874,13 +1096,19 @@
       "dept": "msit",
       "isNew": true,
       "target": "grad",
-      "status": "ongoing",
-      "statusLabel": "신규 공고",
-      "timeline": "2026.03.17: 자유공모형 사업 공고 (~2026.04.17)",
-      "scale": "4개 권역별 대학",
-      "barVal": 0.0,
-      "selected": [],
-      "detail": "AI·ICT 분야의 대학원 연구를 창업으로 직접 연결하여, 연구자가 시장을 주도하는 창업가형 석·박사급 핵심 인재로 성장하도록 지원하는 사업입니다. 연구 주제 발굴부터 시제품 제작, 법인 설립, 투자 연계까지 창업 전 과정을 정규 학위과정에 포함하는 '연구·창업 일체형' 교육 모델을 운영합니다.",
+      "status": "done",
+      "statusLabel": "4개 권역 주관대학 선정·사업 운영",
+      "timeline": "2026.07: 4개교 선정 확인 → 2026.09.02: 창업인재양성센터 현판수여식",
+      "scale": "연 10억 / 교 (최대 6년, 총 55억 이내)",
+      "barVal": 10,
+      "selected": [
+        "KAIST (충청권)",
+        "포항공과대 (동북권)",
+        "UNIST (동남권)",
+        "조선대 (호남권)"
+      ],
+      "detail": "KAIST, 포항공대, UNIST, 조선대 등 4개 주관대학이 선정됐다. 연구와 창업을 연계한 석·박사 교육과정에서 시장 검증, 시제품 제작, 법인화, 투자 연계를 지원한다. 2026.09.02 과기정통부가 AX 선도 창업가형 인재양성센터 현판수여식을 개최했다.",
+      "lastVerifiedAt": "2026-10-06",
       "badges": [
         "과기정통부",
         "신규",
@@ -891,9 +1119,19 @@
       ],
       "links": [
         {
+          "label": "과기정통부 4개교 사업 추진 발표 (KDI 제공)",
+          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=286239",
+          "primary": true
+        },
+        {
+          "label": "조선대 선정·지원 규모 안내",
+          "url": "https://www4.chosun.ac.kr/bbs/glocal30/1081/233120/artclView.do",
+          "primary": false
+        },
+        {
           "label": "베리타스알파",
           "url": "http://www.veritas-a.com/news/articleView.html?idxno=511089",
-          "primary": true
+          "primary": false
         },
         {
           "label": "호남일보",
@@ -910,16 +1148,51 @@
       "isNew": true,
       "target": "univ",
       "status": "done",
-      "statusLabel": "선정 완료",
+      "statusLabel": "AI 분야 37개교 선정",
       "timeline": "2026.02.26: 2026년 신규 운영대학 선정 결과 발표",
-      "scale": "미정",
-      "barVal": 0.0,
+      "scale": "연 14.25억 내외 / 교 (5년 총 71.25억 내외)",
+      "barVal": 14.25,
       "selected": [
-        "아주대학교",
-        "경희대학교",
-        "성균관대학교"
+        "경북대",
+        "계명대",
+        "국립금오공대",
+        "대구가톨릭대",
+        "대구대",
+        "영남대",
+        "국립부경대",
+        "국립창원대",
+        "국립한국해양대",
+        "동의대",
+        "부산대",
+        "부산외대",
+        "순천향대",
+        "충남대",
+        "충북대",
+        "한국교통대",
+        "한남대",
+        "호서대",
+        "광주대",
+        "국립목포대",
+        "순천대",
+        "전남대",
+        "조선대",
+        "조선이공대",
+        "국립군산대",
+        "연세대(미래)",
+        "전북대",
+        "전주대",
+        "제주대",
+        "한라대",
+        "경희대",
+        "서울시립대",
+        "성균관대",
+        "가천대",
+        "단국대",
+        "아주대",
+        "한양대(ERICA)"
       ],
-      "detail": "인공지능(AI) 등 첨단산업 분야에 진출을 희망하는 학생들을 대상으로, 단기간에 집중적인 실무 역량 교육을 제공하는 부트캠프 형식의 사업입니다. 대학이 기업과 협력하여 교육과정을 개발하고 운영합니다.",
+      "detail": "교육부 2026.02.26 발표에서 AI 분야 37개교(비수도권 30개교, 수도권 7개교) 선정 확인. 2026.03.12 교육부 공개 명단을 반영했다. 대학과 기업이 공동으로 1년 이내 단기 집중교육을 운영하며, 교당 5년간 총 71.25억 원 내외를 지원한다. 로봇 2개교와 미래차 2개교는 이 AI 분야 명단에 포함하지 않았다.",
+      "lastVerifiedAt": "2026-10-06",
       "badges": [
         "교육부",
         "신규",
@@ -931,8 +1204,13 @@
       "links": [
         {
           "label": "교육부 공고",
-          "url": "https://www.moe.go.kr/boardCnts/view.do?boardID=333&boardSeq=96860&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=030201&opType=N",
+          "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105435&m=020402&s=moe",
           "primary": true
+        },
+        {
+          "label": "교육부 AI 부트캠프 37개교 명단",
+          "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=340&boardSeq=105599&m=020201&s=moe",
+          "primary": false
         }
       ]
     },
